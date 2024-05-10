@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type FilmCardProps = {
   title: string;
@@ -7,7 +8,10 @@ type FilmCardProps = {
 
 export default function FilmCard({ title, episode_id }: FilmCardProps) {
   return (
-    <div className="bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-[#fee200] transition duration-300">
+    <Link
+      href={`/film/${episode_id}`}
+      className="bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-[#fee200] transition duration-300"
+    >
       <Image
         src="/star-wars-films.png"
         alt="imagen de la pelicula"
@@ -24,6 +28,6 @@ export default function FilmCard({ title, episode_id }: FilmCardProps) {
         </h2>
         <span className="text-gray-400 text-sm">Episodio {episode_id}</span>
       </div>
-    </div>
+    </Link>
   );
 }
