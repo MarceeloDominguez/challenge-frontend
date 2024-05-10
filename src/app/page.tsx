@@ -1,6 +1,6 @@
 import { Suspense } from "react";
-import ListFilms from "./components/ListFilms";
-import { FilmsCardSkeleton } from "./components/Skeletons";
+import ListFilms from "../components/ListFilms";
+import { FilmsCardSkeleton } from "../components/Skeletons";
 
 export default function Home() {
   return (

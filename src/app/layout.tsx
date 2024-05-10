@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import NavBar from "./components/NavBar";
-import { poppins } from "./utils/fonts";
+import NavBar from "../components/NavBar";
+import { poppins } from "../utils/fonts";
 
 export const metadata: Metadata = {
   title: "Star Wars Challenge",

@@ -1,4 +1,4 @@
-import { fetchFilms } from "@/app/lib/data";
+import { fetchFilms } from "@/lib/data";
 
 type Props = {
   params: { id: string };
