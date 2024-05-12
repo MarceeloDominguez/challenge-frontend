@@ -1,20 +1,26 @@
+"use client";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export default function NavBar() {
+  const pathname = usePathname();
+
   return (
-    <div className="px-4 py-6 flex justify-end gap-4">
+    <nav className="px-4 py-6 flex justify-end gap-4">
       <Link
-        className="text-slate-100 hover:text-[#fee200] transition duration-300"
+        className={`${pathname === "/" ? "text-[#fee200]" : "text-slate-100"}`}
         href="/"
       >
         Películas
       </Link>
       <Link
-        className="text-slate-100 hover:text-[#fee200] transition duration-300"
+        className={`${
+          pathname === "/characters" ? "text-[#fee200]" : "text-slate-100"
+        }`}
         href="/characters"
       >
         Personajes
       </Link>
-    </div>
+    </nav>
   );
 }

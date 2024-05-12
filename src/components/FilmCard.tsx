@@ -26,7 +26,7 @@ export default function FilmCard({ title, episode_id }: FilmCardProps) {
         >
           {title}
         </h2>
-        <span className="text-gray-400 text-sm">Episodio {episode_id}</span>
+        <span className="text-gray-400 text-sm">Episodio N° {episode_id}</span>
       </div>
     </Link>
   );
