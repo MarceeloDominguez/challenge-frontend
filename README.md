@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+Desarrollé una aplicación web sobre Star Wars utilizando la API SWAPI. La página principal tiene acceso a las secciones de películas y personajes. Las películas muestran el nombre y el número de episodio, mientras que los detalles incluyen el director y una lista de personajes vinculados. La sección de personajes ofrece filtros por color de ojos y género, con información básica como nombre y género, con opción de paginación. La página de detalle de personaje proporciona detalles adicionales como año de cumpleaños, color de pelo y altura.
 
-First, run the development server:
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone MarceeloDominguez/challenge-frontend
+```
+
+Go to the project directory
+
+```bash
+  cd challenge-frontend
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the project
+
+```bash
+  npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠 Skills
+**Client:** Next, Tailwind css, TypeScript
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Deploy
 
-## Learn More
+Go to project [Star Wars App](https://challenge-frontend-psi.vercel.app/) 
 
-To learn more about Next.js, take a look at the following resources:
+## Resources
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[API SWAPI](https://swapi.dev/) 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
