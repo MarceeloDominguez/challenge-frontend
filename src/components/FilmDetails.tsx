@@ -16,7 +16,7 @@ export default async function FilmDetails({ id }: Props) {
       <div className="p-4 flex flex-col gap-2 my-2 md:my-6 lg:my-0 flex-1 lg:max-w-[50%]">
         <h2
           style={{ fontWeight: "800" }}
-          className="text-slate-100 md:text-6xl text-sm"
+          className="text-[#fee200] md:text-6xl text-sm"
         >
           {filterFilm?.title}
         </h2>

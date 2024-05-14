@@ -10,7 +10,7 @@ export default function FilmCard({ title, episode_id }: FilmCardProps) {
   return (
     <Link
       href={`/film/${episode_id}`}
-      className="bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-[#fee200] transition duration-300"
+      className="bg-slate-900 rounded-xl overflow-hidden shadow-md hover:shadow-[#fee200] transition duration-300 text-slate-100 hover:text-[#fee200]"
     >
       <Image
         src="/star-wars-films.png"
@@ -22,7 +22,7 @@ export default function FilmCard({ title, episode_id }: FilmCardProps) {
       <div className="p-4 flex flex-col gap-2">
         <h2
           style={{ fontWeight: "800" }}
-          className="text-slate-100 md:text-xl text-sm truncate"
+          className="md:text-xl text-sm truncate"
         >
           {title}
         </h2>

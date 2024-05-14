@@ -27,3 +27,16 @@ export async function fetchCharacters(charactersUrl: string[]) {
     console.log(error);
   }
 }
+
+export async function fetchCharactersDetails(numberUrl: string) {
+  try {
+    const resp = await fetch(`https://swapi.dev/api/people/${numberUrl}`);
+    const data = await resp.json();
+
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+}

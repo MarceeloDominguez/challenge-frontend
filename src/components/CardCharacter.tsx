@@ -17,7 +17,7 @@ export default function CardCharacter({
   return (
     <Link
       href={`/characterdetails/${numberUrl}`}
-      className="bg-slate-900 rounded-md shadow-md hover:shadow-[#fee200] transition duration-300"
+      className="bg-slate-900 rounded-md text-slate-100 hover:text-[#fee200] shadow-md hover:shadow-[#fee200] transition duration-300"
     >
       <Image
         src="/character.png"
@@ -30,7 +30,7 @@ export default function CardCharacter({
       <div className="p-2 flex flex-col gap-2">
         <h2
           style={{ fontWeight: "800" }}
-          className="text-slate-100 md:text-xl text-sm truncate"
+          className="md:text-xl text-sm truncate"
         >
           {name}
         </h2>

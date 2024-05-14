@@ -130,11 +130,7 @@ export default function Characters() {
           className="bg-slate-800 h-10 w-40 rounded-lg text-slate-100 text-sm outline-none mb-2 cursor-pointer"
         >
           {["Géneros", ...genres].map((item, index) => (
-            <option
-              //onChange={() => handleGenderChange}
-              key={index}
-              className="text-slate-100 text-sm"
-            >
+            <option key={index} className="text-slate-100 text-sm">
               {item}
             </option>
           ))}
@@ -145,11 +141,7 @@ export default function Characters() {
           className="bg-slate-800 h-10 w-40 rounded-lg text-slate-100 text-sm outline-none mb-2 cursor-pointer"
         >
           {["Color de ojos", ...eyeColor].map((item, index) => (
-            <option
-              //onChange={() => handleEyeColorChange}
-              key={index}
-              className="text-slate-100 text-sm"
-            >
+            <option key={index} className="text-slate-100 text-sm">
               {item}
             </option>
           ))}
